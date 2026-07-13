@@ -94,7 +94,7 @@ export default function Blog() {
                   {FEATURED.title}
                 </Link>
               </h2>
-              <p className="text-slate-500 text-base font-light leading-relaxed mb-10">{FEATURED.excerpt}</p>
+              <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed mb-10">{FEATURED.excerpt}</p>
               <Link href={FEATURED.href} className="link-more text-navy hover:text-brand-600">
                 Read article
                 <span className="link-more-arrow">
@@ -139,7 +139,7 @@ export default function Blog() {
                       {p.title}
                     </Link>
                   </h3>
-                  <p className="text-slate-500 text-[0.95rem] font-light leading-relaxed mb-8 flex-1">{p.excerpt}</p>
+                  <p className="text-slate-500 text-base font-normal leading-relaxed mb-8 flex-1">{p.excerpt}</p>
                   <div className="flex items-center justify-between pt-6 border-t border-navy/[0.08]">
                     <span className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-slate-400">
                       {p.date} · {p.read}
@@ -168,7 +168,7 @@ export default function Blog() {
           <h2 data-split className="font-display font-light text-navy text-3xl sm:text-4xl leading-[1.2] mb-7">
             We publish when we have something worth saying.
           </h2>
-          <p data-reveal data-reveal-delay="160" className="text-slate-500 text-base font-light leading-relaxed max-w-xl mx-auto mb-12">
+          <p data-reveal data-reveal-delay="160" className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed max-w-xl mx-auto mb-12">
             We do not produce content for content&apos;s sake. When we publish, it is because we
             have something useful to say to people building, buying or governing AI. If that sounds
             like you, our contact page is the best way to stay connected.

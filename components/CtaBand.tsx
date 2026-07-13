@@ -34,7 +34,7 @@ export default function CtaBand({
         <p
           data-reveal
           data-reveal-delay="180"
-          className="text-white/60 font-light text-lg leading-relaxed max-w-xl mx-auto mb-12"
+          className="text-white/75 font-normal text-lg leading-relaxed max-w-xl mx-auto mb-12"
         >
           {text}
         </p>

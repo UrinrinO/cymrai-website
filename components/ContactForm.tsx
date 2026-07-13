@@ -49,7 +49,7 @@ export default function ContactForm() {
       <div className="bg-cream border-l border-brand-300 px-10 py-16 text-center flex flex-col items-center">
         <CheckCircle2 size={44} strokeWidth={1} className="text-brand-500 mb-7" />
         <h3 className="font-display font-light text-navy text-3xl mb-4">Message received</h3>
-        <p className="text-slate-500 text-base font-light leading-relaxed max-w-sm">
+        <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed max-w-sm">
           One of our directors will get back to you personally within one working day. In the
           meantime, feel free to call us on 07931 046 771.
         </p>
@@ -61,7 +61,7 @@ export default function ContactForm() {
     <div className="bg-cream border-l border-brand-300 px-8 sm:px-12 py-12">
       <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-4">Write to us</p>
       <h3 className="font-display font-light text-navy text-3xl mb-3">Send us a message</h3>
-      <p className="text-slate-500 text-sm font-light leading-relaxed mb-12">
+      <p className="text-slate-500 text-base font-normal leading-relaxed mb-12">
         Tell us about your project, challenge or question and we will get back to you directly.
       </p>
 

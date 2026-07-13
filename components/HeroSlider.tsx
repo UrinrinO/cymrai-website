@@ -84,7 +84,7 @@ export default function HeroSlider() {
           <p
             data-reveal
             data-reveal-delay="220"
-            className="text-white/70 font-light text-lg sm:text-xl leading-relaxed max-w-xl mb-12"
+            className="text-white/80 font-normal text-lg sm:text-xl leading-relaxed max-w-xl mb-12"
           >
             Three directors, thirty-two years between them, building AI and data systems that hold
             up in production for mid-market businesses across the UK.

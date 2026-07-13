@@ -51,7 +51,7 @@ export default function Contact() {
               <h2 className="font-display font-light text-navy text-4xl sm:text-[2.9rem] leading-[1.12] mb-7">
                 Senior AI expertise. Just an honest conversation.
               </h2>
-              <p className="text-slate-500 text-base font-light leading-relaxed mb-14 max-w-lg">
+              <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed mb-14 max-w-lg">
                 Tell us what you&apos;re working on, or what&apos;s not working. Our directors will
                 respond personally within one working day. No account managers, no holding pages.
               </p>
@@ -66,7 +66,7 @@ export default function Contact() {
                           {d.label}
                         </span>
                         <span
-                          className={`block text-navy text-lg font-light leading-snug ${
+                          className={`block text-navy text-lg font-normal leading-snug ${
                             d.href ? "group-hover:text-brand-600 transition-colors" : ""
                           }`}
                         >
@@ -98,7 +98,7 @@ export default function Contact() {
                 <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-3">
                   Within one working day
                 </p>
-                <p className="text-slate-500 text-base font-light leading-relaxed">
+                <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed">
                   All enquiries are handled directly by our directors, not a sales team.
                   We&apos;ll let you know quickly whether we&apos;re the right fit.
                 </p>

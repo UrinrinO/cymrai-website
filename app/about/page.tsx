@@ -92,7 +92,7 @@ export default function About() {
               <h2 className="font-display font-light text-navy text-3xl sm:text-4xl leading-[1.15] mb-8">
                 Ambitious, precise software engineering, from Wales.
               </h2>
-              <div className="space-y-5 text-slate-500 text-base font-light leading-relaxed">
+              <div className="space-y-5 text-slate-500 text-[1.0625rem] font-normal leading-relaxed">
                 <p>
                   We started Cymrai because good engineering does not have to come out of the same
                   handful of cities, and because too much of the AI work we had watched from the
@@ -167,9 +167,10 @@ export default function About() {
             <div className="px-8 sm:px-14 lg:px-20 py-16 lg:py-24 w-full max-w-2xl">
               <span className="eyebrow eyebrow--light block mb-6">Our mission</span>
               <h2 className="font-display font-light text-3xl sm:text-4xl leading-[1.15] mb-8">
-                Making AI and data work in production, not just in demos.
+                Making AI and data work <span className="font-semibold">in production</span>, not
+                just in demos.
               </h2>
-              <div className="space-y-5 text-white/60 text-base font-light leading-relaxed mb-10">
+              <div className="space-y-5 text-white/60 text-[1.0625rem] font-normal leading-relaxed mb-10">
                 <p>
                   There is a wide gap between what AI is supposed to do and what most organisations
                   manage to get running. Some know AI could change how they operate but have no idea
@@ -220,7 +221,7 @@ export default function About() {
               <article key={c.title} className="bg-paper hover:bg-white transition-colors border-r border-b border-navy/15 p-9 flex flex-col">
                 <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-5">{c.label}</p>
                 <h3 className="font-display text-navy text-[1.7rem] leading-snug mb-4">{c.title}</h3>
-                <p className="text-slate-500 text-base font-light leading-relaxed mb-8 flex-1">{c.body}</p>
+                <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed mb-8 flex-1">{c.body}</p>
                 <Link href="/services" className="link-more text-navy hover:text-brand-600">
                   Learn more
                   <span className="link-more-arrow">
@@ -251,7 +252,7 @@ export default function About() {
               <div key={title}>
                 <Icon size={40} strokeWidth={1} className="text-brand-500 mb-7" />
                 <h3 className="text-navy text-[1.08rem] font-medium leading-snug mb-4 max-w-[15rem]">{title}</h3>
-                <p className="text-slate-500 text-base font-light leading-relaxed">{body}</p>
+                <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed">{body}</p>
               </div>
             ))}
           </div>

@@ -40,7 +40,7 @@ export default function NotFound() {
         <h1 data-split className="font-display text-white font-light text-5xl sm:text-6xl leading-[1.1] mb-7">
           This page took a wrong turn.
         </h1>
-        <p data-reveal data-reveal-delay="240" className="text-white/60 font-light text-lg leading-relaxed max-w-xl mx-auto mb-12">
+        <p data-reveal data-reveal-delay="240" className="text-white/75 font-normal text-lg leading-relaxed max-w-xl mx-auto mb-12">
           The page you&apos;re after doesn&apos;t exist, has moved, or never made it out of
           prototype. Let&apos;s get you back on track.
         </p>

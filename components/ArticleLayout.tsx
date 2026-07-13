@@ -56,7 +56,7 @@ export default function ArticleLayout({
           <p
             data-reveal
             data-reveal-delay="300"
-            className="text-white/65 font-light text-lg leading-relaxed max-w-2xl mx-auto"
+            className="text-white/75 font-normal text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto"
           >
             {intro}
           </p>
@@ -94,14 +94,14 @@ export default function ArticleLayout({
 /** Prose helpers so article pages stay readable. */
 export function H2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="font-display font-light text-navy text-3xl sm:text-[2.1rem] leading-[1.2] mt-14 mb-6">
+    <h2 className="font-display font-normal text-navy text-3xl sm:text-[2.1rem] leading-[1.2] mt-14 mb-6">
       {children}
     </h2>
   );
 }
 
 export function P({ children }: { children: React.ReactNode }) {
-  return <p className="text-slate-600 text-[1.05rem] font-light leading-[1.85] mb-6">{children}</p>;
+  return <p className="text-slate-700 text-[1.1875rem] font-normal leading-[1.8] mb-7">{children}</p>;
 }
 
 export function Pull({ children }: { children: React.ReactNode }) {
@@ -113,5 +113,5 @@ export function Pull({ children }: { children: React.ReactNode }) {
 }
 
 export function Strong({ children }: { children: React.ReactNode }) {
-  return <span className="font-normal text-navy">{children}</span>;
+  return <strong className="font-semibold text-navy">{children}</strong>;
 }

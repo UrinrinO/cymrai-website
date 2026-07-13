@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/logo-white.png" alt="Cymrai Software Solutions" className="h-10 w-auto mb-7" />
-            <p className="text-slate-400 text-base font-light leading-relaxed max-w-xs mb-8">
+            <p className="text-slate-400 text-[1.0625rem] font-normal leading-relaxed max-w-xs mb-8">
               A senior-led AI and software engineering consultancy. Production-grade AI and data
               solutions, built in Cardiff for mid-market businesses across the UK.
             </p>
@@ -62,7 +62,7 @@ export default function Footer() {
           {/* Explore */}
           <div className="lg:col-span-2">
             <p className="text-white text-[0.76rem] font-medium tracking-[0.28em] uppercase mb-7">Cymrai</p>
-            <ul className="space-y-4 text-[0.95rem] font-light">
+            <ul className="space-y-4 text-base font-normal">
               {EXPLORE.map(([href, label]) => (
                 <li key={href}>
                   <Link href={href} className="foot-link text-slate-400 hover:text-white transition-colors">
@@ -76,7 +76,7 @@ export default function Footer() {
           {/* Services */}
           <div className="lg:col-span-3">
             <p className="text-white text-[0.76rem] font-medium tracking-[0.28em] uppercase mb-7">Services</p>
-            <ul className="space-y-4 text-[0.95rem] font-light">
+            <ul className="space-y-4 text-base font-normal">
               {SERVICES.map(([href, label]) => (
                 <li key={label}>
                   <Link href={href} className="foot-link text-slate-400 hover:text-white transition-colors">
@@ -92,13 +92,13 @@ export default function Footer() {
             <p className="text-white text-[0.76rem] font-medium tracking-[0.28em] uppercase mb-7">Get in touch</p>
             <a
               href="mailto:info@cymrai.co.uk"
-              className="group flex items-center justify-between gap-4 border-b border-white/25 pb-3 mb-3 text-base font-light text-slate-300 hover:text-white transition-colors"
+              className="group flex items-center justify-between gap-4 border-b border-white/25 pb-3 mb-3 text-[1.0625rem] font-normal text-slate-300 hover:text-white transition-colors"
             >
               info@cymrai.co.uk
               <ArrowRight size={14} className="text-brand-300 group-hover:translate-x-1 transition-transform" />
             </a>
             <p className="text-slate-500 text-sm font-light italic mb-8">Every enquiry answered by a director.</p>
-            <ul className="space-y-3 text-[0.95rem] font-light">
+            <ul className="space-y-3 text-base font-normal">
               <li>
                 <a href="tel:07931046771" className="text-slate-400 hover:text-white transition-colors">
                   07931 046 771

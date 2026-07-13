@@ -111,7 +111,8 @@ export default function Home() {
             </span>
             <h2 data-split className="font-display font-light text-navy text-4xl sm:text-5xl leading-[1.12]">
               We build AI that survives
-              <br className="hidden sm:block" /> contact with production.
+              <br className="hidden sm:block" />{" "}
+              <span className="font-semibold">contact with production.</span>
             </h2>
           </div>
 
@@ -120,7 +121,7 @@ export default function Home() {
               <div key={title}>
                 <Icon size={40} strokeWidth={1} className="text-brand-500 mb-7" />
                 <h3 className="text-navy text-[1.08rem] font-medium leading-snug mb-4 max-w-[15rem]">{title}</h3>
-                <p className="text-slate-500 text-base font-light leading-relaxed">{desc}</p>
+                <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -160,7 +161,7 @@ export default function Home() {
           <div data-reveal="left" className="bg-navy text-white flex items-center order-4 lg:order-none">
             <div className="px-8 sm:px-14 lg:px-20 py-16 lg:py-20 w-full max-w-2xl">
               <h2 className="font-display font-light text-3xl sm:text-4xl leading-[1.15] mb-12">
-                We stay past launch.
+                We stay <span className="font-semibold">past launch.</span>
               </h2>
               <svg viewBox="0 0 420 150" fill="none" className="w-full" aria-hidden="true">
                 {[0, 30, 60, 90, 120, 150].map((y) => (
@@ -239,10 +240,10 @@ export default function Home() {
               Sector experience
             </span>
             <h2 data-split className="font-display font-light text-navy text-4xl sm:text-5xl leading-[1.12] mb-6">
-              Where we have done
-              <br className="hidden sm:block" /> this before.
+              Where we have
+              <br className="hidden sm:block" /> <span className="font-semibold">done this before.</span>
             </h2>
-            <p data-reveal data-reveal-delay="160" className="text-slate-500 text-base font-light leading-relaxed max-w-md">
+            <p data-reveal data-reveal-delay="160" className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed max-w-md">
               Much of our work is under NDA, so we describe it by industry rather than by client name.
             </p>
           </div>
@@ -254,7 +255,7 @@ export default function Home() {
               <article key={s.name} className="bg-paper hover:bg-white transition-colors border-r border-b border-navy/15 p-9 flex flex-col">
                 <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-5">{s.label}</p>
                 <h3 className="font-display text-navy text-[1.7rem] leading-snug mb-4">{s.name}</h3>
-                <p className="text-slate-500 text-base font-light leading-relaxed mb-8 flex-1">{s.desc}</p>
+                <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed mb-8 flex-1">{s.desc}</p>
                 <Link href="/services" className="link-more text-navy hover:text-brand-600">
                   Read more
                   <span className="link-more-arrow">
@@ -288,7 +289,7 @@ export default function Home() {
                 <p className="font-display text-navy text-4xl mb-9">{t.name}</p>
                 <ul className="space-y-4 mb-11">
                   {t.points.map((p) => (
-                    <li key={p} className="text-slate-500 text-base font-light border-b border-navy/[0.07] pb-4 last:border-0">
+                    <li key={p} className="text-slate-500 text-[1.0625rem] font-normal border-b border-navy/[0.07] pb-4 last:border-0">
                       {p}
                     </li>
                   ))}
@@ -321,7 +322,7 @@ export default function Home() {
                 <h2 className="font-display font-light text-3xl sm:text-4xl leading-[1.15] mb-6 max-w-md">
                   What will AI look like for your business next year?
                 </h2>
-                <p className="text-white/60 text-base font-light leading-relaxed max-w-sm">
+                <p className="text-white/60 text-[1.0625rem] font-normal leading-relaxed max-w-sm">
                   Whether you have a project in mind or are still working out what AI could do for
                   you, the first conversation costs nothing.
                 </p>

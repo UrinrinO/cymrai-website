@@ -54,7 +54,7 @@ export default function PageHero({
         <p
           data-reveal
           data-reveal-delay="260"
-          className="text-white/65 font-light text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto"
+          className="text-white/75 font-normal text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto"
         >
           {subtitle}
         </p>
