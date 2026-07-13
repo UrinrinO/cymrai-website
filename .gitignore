@@ -1,0 +1,16 @@
+/node_modules
+/.next
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+!.env.example
+/.vercel
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# The presentation is served from YouTube; the source file stays local rather
+# than living in git history forever.
+/public/videos/
