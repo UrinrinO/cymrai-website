@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { enquiryAutoReply, enquiryNotification } from "@/lib/email";
 
 /**
  * Contact form handler — relays enquiries to the directors' inbox via Resend.
@@ -11,6 +12,10 @@ import { Resend } from "resend";
  *   CONTACT_FROM    — verified sender (default Resend's onboarding address,
  *                     which only delivers to the Resend account owner's email
  *                     until cymrai.co.uk is verified at resend.com/domains)
+ *   CONTACT_AUTOREPLY — set to "true" to also send the sender a confirmation.
+ *                     Off by default: it emails whatever address was typed into
+ *                     the form, so anyone could use it to send mail from your
+ *                     domain to a stranger.
  */
 export async function POST(req: Request) {
   const body = await req.json().catch(() => null);
@@ -42,22 +47,25 @@ export async function POST(req: Request) {
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
+  const from = process.env.CONTACT_FROM ?? "Cymrai Website <onboarding@resend.dev>";
 
-  const lines = [
-    `Name:         ${name.trim()}`,
-    `Organisation: ${organisation?.trim() || "—"}`,
-    `Email:        ${email.trim()}`,
-    `Area:         ${area?.trim() || "—"}`,
-    "",
-    message.trim(),
-  ];
+  const enquiry = {
+    name: name.trim(),
+    organisation: organisation?.trim(),
+    email: email.trim(),
+    area: area?.trim(),
+    message: message.trim(),
+  };
+
+  const notification = enquiryNotification(enquiry);
 
   const { error } = await resend.emails.send({
-    from: process.env.CONTACT_FROM ?? "Cymrai Website <onboarding@resend.dev>",
+    from,
     to: process.env.CONTACT_TO ?? "info@cymrai.co.uk",
-    replyTo: email.trim(),
-    subject: `Website enquiry — ${name.trim()}${organisation?.trim() ? ` (${organisation.trim()})` : ""}`,
-    text: lines.join("\n"),
+    replyTo: enquiry.email,
+    subject: notification.subject,
+    html: notification.html,
+    text: notification.text,
   });
 
   if (error) {
@@ -66,6 +74,21 @@ export async function POST(req: Request) {
       { error: "Something went wrong sending your message. Please try again or email info@cymrai.co.uk." },
       { status: 502 }
     );
+  }
+
+  // The enquiry is already safely delivered, so a failed confirmation must not
+  // fail the request: the sender would be told to submit again.
+  if (process.env.CONTACT_AUTOREPLY === "true") {
+    const reply = enquiryAutoReply(enquiry);
+    const { error: replyError } = await resend.emails.send({
+      from,
+      to: enquiry.email,
+      replyTo: process.env.CONTACT_TO ?? "info@cymrai.co.uk",
+      subject: reply.subject,
+      html: reply.html,
+      text: reply.text,
+    });
+    if (replyError) console.error("[contact] auto-reply failed:", replyError);
   }
 
   return NextResponse.json({ ok: true });
