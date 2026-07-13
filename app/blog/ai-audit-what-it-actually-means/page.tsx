@@ -18,8 +18,8 @@ export default function Page() {
         read="9 min read"
         title="An AI Audit Isn't a Technical Review. Here's What It Actually Is."
         intro="The term 'AI audit' means different things to different people. Most definitions are too narrow. Here is how we think about it, and why the scope matters more than the methodology."
-        image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1200"
-        imageAlt="Person reviewing documents at a desk"
+        image="/images/audit_1.jpg"
+        imageAlt="An AI governance dashboard with compliance checks and risk charts"
       >
         <P>
           When most people hear &ldquo;AI audit&rdquo;, they picture an engineer checking a model&apos;s

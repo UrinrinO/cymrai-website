@@ -21,13 +21,13 @@ const FEATURED = {
   title: "Why Most AI Projects Never Make It to Production",
   excerpt:
     "The failure rate of enterprise AI projects is not a secret. What gets talked about less is precisely where these projects break down, and why the same patterns keep repeating.",
-  image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200",
+  image: "/images/audit.jpg",
 };
 
 const POSTS = [
   {
     href: "/blog/data-engineering-unglamorous-foundation",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    image: "/images/data-engineering.jpg",
     category: "Data Engineering",
     date: "7 May 2026",
     read: "7 min read",
@@ -37,7 +37,7 @@ const POSTS = [
   },
   {
     href: "/blog/six-questions-before-signing-ai-contract",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+    image: "/images/ai-strategy.jpg",
     category: "AI Strategy",
     date: "19 March 2026",
     read: "6 min read",
@@ -47,7 +47,7 @@ const POSTS = [
   },
   {
     href: "/blog/ai-audit-what-it-actually-means",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800",
+    image: "/images/audit_1.jpg",
     category: "AI Governance",
     date: "29 January 2026",
     read: "9 min read",
@@ -124,7 +124,7 @@ export default function Blog() {
           <div data-reveal-stagger className="grid grid-cols-1 md:grid-cols-3 border-t border-l border-navy/15">
             {POSTS.map((p) => (
               <article key={p.href} className="group bg-paper hover:bg-white transition-colors border-r border-b border-navy/15 flex flex-col">
-                <Link href={p.href} className="relative block h-56 overflow-hidden">
+                <Link href={p.href} className="relative block h-80 overflow-hidden">
                   <img
                     src={p.image}
                     alt={p.title}

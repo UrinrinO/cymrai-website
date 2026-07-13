@@ -18,8 +18,8 @@ export default function Page() {
         read="6 min read"
         title="Six Questions to Ask Before You Sign an AI Contract"
         intro="AI vendors have learned to be very good at demos. Here is what to ask when the demo is finished and the contract is on the table."
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200"
-        imageAlt="Fountain pen resting on a signed document"
+        image="/images/ai-strategy.jpg"
+        imageAlt="A chess king on a circuit board, lit by a neural network"
       >
         <P>
           A polished demo tells you one thing: the vendor can make their product look good under conditions

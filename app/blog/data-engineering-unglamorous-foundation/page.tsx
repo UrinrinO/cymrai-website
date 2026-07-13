@@ -18,8 +18,8 @@ export default function Page() {
         read="7 min read"
         title="The Unglamorous Foundation: Why Data Engineering Decides Whether Your AI Project Succeeds"
         intro="Every conversation about AI focuses on the model. What rarely gets talked about is the infrastructure those models depend on, and what happens when it is built badly."
-        image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200"
-        imageAlt="Analytics dashboard on a laptop screen"
+        image="/images/data-engineering.jpg"
+        imageAlt="A data pipeline diagram: sources feeding ETL, warehouses and machine learning"
       >
         <P>
           There is a version of the AI conversation that happens on stage at conferences, and a version that

@@ -18,8 +18,8 @@ export default function Page() {
         read="8 min read"
         title="Why Most AI Projects Never Make It to Production"
         intro="The failure rate of enterprise AI projects is not a secret. What gets talked about less is precisely where these projects break down, and why the same patterns keep repeating."
-        image="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200"
-        imageAlt="Developer working late at a laptop"
+        image="/images/audit.jpg"
+        imageAlt="An analyst reviewing AI compliance and performance dashboards"
       >
         <P>
           Stalled AI projects nearly all follow the same arc. A promising demo. Enthusiastic sign-off. A pilot
