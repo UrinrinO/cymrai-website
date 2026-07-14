@@ -220,7 +220,7 @@ export default function About() {
             {CORE.map((c) => (
               <article key={c.title} className="bg-paper hover:bg-white transition-colors border-r border-b border-navy/15 p-9 flex flex-col">
                 <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-5">{c.label}</p>
-                <h3 className="font-display text-brand-600 text-[1.7rem] leading-snug mb-4">{c.title}</h3>
+                <h3 className="font-display text-navy text-[1.7rem] leading-snug mb-4">{c.title}</h3>
                 <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed mb-8 flex-1">{c.body}</p>
                 <Link href="/services" className="link-more text-navy hover:text-brand-600">
                   Learn more
@@ -251,7 +251,7 @@ export default function About() {
             {VALUES.map(({ Icon, title, body }) => (
               <div key={title}>
                 <Icon size={40} strokeWidth={1} className="text-brand-500 mb-7" />
-                <h3 className="text-brand-600 text-[1.08rem] font-medium leading-snug mb-4 max-w-[15rem]">{title}</h3>
+                <h3 className="text-navy text-[1.08rem] font-medium leading-snug mb-4 max-w-[15rem]">{title}</h3>
                 <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed">{body}</p>
               </div>
             ))}

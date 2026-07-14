@@ -134,7 +134,7 @@ export default function Blog() {
                 </Link>
                 <div className="p-9 flex flex-col flex-1">
                   <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-5">{p.category}</p>
-                  <h3 className="font-display text-brand-600 text-[1.45rem] leading-snug mb-4">
+                  <h3 className="font-display text-navy text-[1.45rem] leading-snug mb-4">
                     <Link href={p.href} className="hover:text-brand-600 transition-colors">
                       {p.title}
                     </Link>
