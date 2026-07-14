@@ -111,7 +111,7 @@ export default function Services() {
             {DIFF.map(({ Icon, title, body }) => (
               <div key={title}>
                 <Icon size={40} strokeWidth={1} className="text-brand-500 mb-7" />
-                <h3 className="text-navy text-[1.08rem] font-medium leading-snug mb-4">{title}</h3>
+                <h3 className="text-brand-600 text-[1.08rem] font-medium leading-snug mb-4">{title}</h3>
                 <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed">{body}</p>
               </div>
             ))}
@@ -181,7 +181,7 @@ export default function Services() {
             <span data-reveal className="eyebrow block mb-6">
               Core services
             </span>
-            <h2 data-split className="font-display font-light text-navy text-4xl sm:text-5xl leading-[1.12]">
+            <h2 data-split className="font-display font-light text-brand-600 text-4xl sm:text-5xl leading-[1.12]">
               What we deliver,
               <br className="hidden sm:block" /> <span className="font-semibold">end to end.</span>
             </h2>
@@ -203,7 +203,7 @@ export default function Services() {
 
                 <div className="lg:col-span-5">
                   <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-4">{s.tagline}</p>
-                  <h3 className="font-display text-navy text-3xl sm:text-[2.1rem] leading-snug mb-5">{s.title}</h3>
+                  <h3 className="font-display text-brand-600 text-3xl sm:text-[2.1rem] leading-snug mb-5">{s.title}</h3>
                   <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed">{s.body}</p>
                 </div>
 

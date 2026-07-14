@@ -89,7 +89,7 @@ export default function Blog() {
                   {FEATURED.date} · {FEATURED.read}
                 </span>
               </div>
-              <h2 className="font-display font-light text-navy text-3xl sm:text-4xl leading-[1.15] mb-6">
+              <h2 className="font-display font-light text-brand-600 text-3xl sm:text-4xl leading-[1.15] mb-6">
                 <Link href={FEATURED.href} className="hover:text-brand-600 transition-colors">
                   {FEATURED.title}
                 </Link>
@@ -114,7 +114,7 @@ export default function Blog() {
             <span data-reveal className="eyebrow block mb-6">
               All articles
             </span>
-            <h2 data-split className="font-display font-light text-navy text-4xl sm:text-5xl leading-[1.12]">
+            <h2 data-split className="font-display font-light text-brand-600 text-4xl sm:text-5xl leading-[1.12]">
               More reading
             </h2>
           </div>
@@ -134,7 +134,7 @@ export default function Blog() {
                 </Link>
                 <div className="p-9 flex flex-col flex-1">
                   <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-5">{p.category}</p>
-                  <h3 className="font-display text-navy text-[1.45rem] leading-snug mb-4">
+                  <h3 className="font-display text-brand-600 text-[1.45rem] leading-snug mb-4">
                     <Link href={p.href} className="hover:text-brand-600 transition-colors">
                       {p.title}
                     </Link>
@@ -165,7 +165,7 @@ export default function Blog() {
           <span data-reveal className="eyebrow block mb-6">
             More to come
           </span>
-          <h2 data-split className="font-display font-light text-navy text-3xl sm:text-4xl leading-[1.2] mb-7">
+          <h2 data-split className="font-display font-light text-brand-600 text-3xl sm:text-4xl leading-[1.2] mb-7">
             We publish when we have something worth saying.
           </h2>
           <p data-reveal data-reveal-delay="160" className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed max-w-xl mx-auto mb-12">

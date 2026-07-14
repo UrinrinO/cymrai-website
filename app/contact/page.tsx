@@ -48,7 +48,7 @@ export default function Contact() {
             {/* Info */}
             <div data-reveal="left">
               <span className="eyebrow block mb-6">No hard sell</span>
-              <h2 className="font-display font-light text-navy text-4xl sm:text-[2.9rem] leading-[1.12] mb-7">
+              <h2 className="font-display font-light text-brand-600 text-4xl sm:text-[2.9rem] leading-[1.12] mb-7">
                 Senior AI expertise. Just an honest conversation.
               </h2>
               <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed mb-14 max-w-lg">

@@ -94,7 +94,7 @@ export default function ArticleLayout({
 /** Prose helpers so article pages stay readable. */
 export function H2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="font-display font-normal text-navy text-3xl sm:text-[2.1rem] leading-[1.2] mt-14 mb-6">
+    <h2 className="font-display font-normal text-brand-600 text-3xl sm:text-[2.1rem] leading-[1.2] mt-14 mb-6">
       {children}
     </h2>
   );

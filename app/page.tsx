@@ -109,7 +109,7 @@ export default function Home() {
             <span data-reveal className="eyebrow block mb-6">
               What we do
             </span>
-            <h2 data-split className="font-display font-light text-navy text-4xl sm:text-5xl leading-[1.12]">
+            <h2 data-split className="font-display font-light text-brand-600 text-4xl sm:text-5xl leading-[1.12]">
               We build AI that survives
               <br className="hidden sm:block" />{" "}
               <span className="font-semibold">contact with production.</span>
@@ -120,7 +120,7 @@ export default function Home() {
             {PILLARS.map(({ Icon, title, desc }) => (
               <div key={title}>
                 <Icon size={40} strokeWidth={1} className="text-brand-500 mb-7" />
-                <h3 className="text-navy text-[1.08rem] font-medium leading-snug mb-4 max-w-[15rem]">{title}</h3>
+                <h3 className="text-brand-600 text-[1.08rem] font-medium leading-snug mb-4 max-w-[15rem]">{title}</h3>
                 <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed">{desc}</p>
               </div>
             ))}
@@ -139,7 +139,7 @@ export default function Home() {
           {/* Row 1 — cream panel with discipline bars */}
           <div data-reveal="right" className="bg-cream flex items-center">
             <div className="px-8 sm:px-14 lg:px-20 py-16 lg:py-20 w-full max-w-2xl">
-              <h2 className="font-display font-light text-navy text-3xl sm:text-4xl leading-[1.15] mb-12">
+              <h2 className="font-display font-light text-brand-600 text-3xl sm:text-4xl leading-[1.15] mb-12">
                 Where our work sits.
               </h2>
               {[
@@ -239,7 +239,7 @@ export default function Home() {
             <span data-reveal className="eyebrow block mb-6">
               Sector experience
             </span>
-            <h2 data-split className="font-display font-light text-navy text-4xl sm:text-5xl leading-[1.12] mb-6">
+            <h2 data-split className="font-display font-light text-brand-600 text-4xl sm:text-5xl leading-[1.12] mb-6">
               Where we have
               <br className="hidden sm:block" /> <span className="font-semibold">done this before.</span>
             </h2>
@@ -254,7 +254,7 @@ export default function Home() {
             {SECTORS.map((s) => (
               <article key={s.name} className="bg-paper hover:bg-white transition-colors border-r border-b border-navy/15 p-9 flex flex-col">
                 <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-brand-500 mb-5">{s.label}</p>
-                <h3 className="font-display text-navy text-[1.7rem] leading-snug mb-4">{s.name}</h3>
+                <h3 className="font-display text-brand-600 text-[1.7rem] leading-snug mb-4">{s.name}</h3>
                 <p className="text-slate-500 text-[1.0625rem] font-normal leading-relaxed mb-8 flex-1">{s.desc}</p>
                 <Link href="/services" className="link-more text-navy hover:text-brand-600">
                   Read more
@@ -276,7 +276,7 @@ export default function Home() {
             <span data-reveal className="eyebrow block mb-6">
               Ways to work with us
             </span>
-            <h2 data-split className="font-display font-light text-navy text-4xl sm:text-5xl leading-[1.12]">
+            <h2 data-split className="font-display font-light text-brand-600 text-4xl sm:text-5xl leading-[1.12]">
               Three ways to start,
               <br className="hidden sm:block" /> depending on how far along you are.
             </h2>
