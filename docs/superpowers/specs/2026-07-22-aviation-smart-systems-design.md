@@ -61,7 +61,7 @@ the two features stay visually distinct.
 
 | Label | Body |
 |---|---|
-| Workflow modernization | Migrate off legacy MRO systems into fast, modern databases. |
+| Workflow modernisation | Migrate off legacy MRO systems into fast, modern databases. |
 | AI inventory forecasting | Predict procurement needs and flag surplus stock for liquidation. |
 | OCR and AI records | Evaluate engines before sale and fast-track the records team. |
 

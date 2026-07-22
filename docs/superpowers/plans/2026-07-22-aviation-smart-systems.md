@@ -56,7 +56,7 @@ Add these two arrays next to the existing `SERVICES` array (anywhere among the t
 const AVIATION_CAPABILITIES = [
   {
     Icon: Workflow,
-    label: "Workflow modernization",
+    label: "Workflow modernisation",
     body: "Migrate off legacy MRO systems into fast, modern databases.",
   },
   {
